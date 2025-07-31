@@ -10,7 +10,3 @@ st.code("""if __name__ == '__main__':
     print(unique_scores[1])                # Print the second highest score
 """)
 st.txt("Input:")
-st.markdown("5
-2 3 6 6 5
-")
-st.markdown("5")
