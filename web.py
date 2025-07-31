@@ -9,4 +9,8 @@ st.code("""if __name__ == '__main__':
     unique_scores.sort(reverse=True)       # Sort in descending order
     print(unique_scores[1])                # Print the second highest score
 """)
-st.write("Input")
+st.write("Input: 
+5
+2 3 6 6 5")
+st.write("Output:
+5")
