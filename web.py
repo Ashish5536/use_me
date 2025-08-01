@@ -40,10 +40,10 @@ st.write("Input: ")
 st.write("2
 Harsh 25 26.5 28
 Anurag 26 28 30
-Harsh
+Harsh ")
 
 
-")
+
 st.write("Output: ")
 st.write("26.50")
 
