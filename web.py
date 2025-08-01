@@ -35,3 +35,13 @@ query_name = input()
 average = sum(student_marks[query_name]) / len(student_marks[query_name])
 print(f"{average:.2f}")
 """)
+st.write("Input: ")
+
+st.write(
+Harsh 25 26.5 28
+Anurag 26 28 30
+Harsh
+")
+st.write("Output: ")
+st.write("26.50
+")
