@@ -46,4 +46,22 @@ st.write("Harsh ")
 
 st.write("Output: ")
 st.write("26.50")
+st.subheader("code:3")
+st.code("""import numpy
+
+# Step 1: Input लें और उसे integer में बदलें
+n, m = map(int, input().split())
+
+# Step 2: N पंक्तियों के लिए input पढ़ें और array बनाएँ
+arr = numpy.array([ list(map(int, input().split())) for _ in range(n) ])
+
+# Step 3: axis=0 पर sum करें (यानि कॉलम के अनुसार जोड़ें)
+sum_result = numpy.sum(arr, axis=0)
+
+# Step 4: उस sum_result का product निकालें
+product_result = numpy.prod(sum_result)
+
+# Step 5: अंतिम परिणाम प्रिंट करें
+print(product_result)
+""")
 
