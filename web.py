@@ -43,5 +43,5 @@ Anurag 26 28 30
 Harsh
 ")
 st.write("Output: ")
-st.write("26.50
-")
+st.write("26.50")
+
