@@ -37,10 +37,10 @@ print(f"{average:.2f}")
 """)
 st.write("Input: ")
 
-st.write("2
-Harsh 25 26.5 28
-Anurag 26 28 30
-Harsh ")
+st.write("2")
+st.write("Harsh 25 26.5 28
+          Anurag 26 28 30
+          Harsh ")
 
 
 
