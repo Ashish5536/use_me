@@ -14,3 +14,24 @@ st.write("5")
 st.write("2 3 6 6 5")
 st.write("Output: ")
 st.write("5")
+st.subheader("code:2")
+st.code("""# Read number of students
+n = int(input())
+
+# Create an empty dictionary to store student records
+student_marks = {}
+
+# Read n lines of student data
+for _ in range(n):
+    line = input().split()
+    name = line[0]
+    scores = list(map(float, line[1:]))
+    student_marks[name] = scores
+
+# Read the name to query
+query_name = input()
+
+# Calculate and print the average to 2 decimal places
+average = sum(student_marks[query_name]) / len(student_marks[query_name])
+print(f"{average:.2f}")
+""")
