@@ -64,9 +64,9 @@ product_result = numpy.prod(sum_result)
 # Step 5: अंतिम परिणाम प्रिंट करें
 print(product_result)
 """)
-st.write("PSKO is related to ILDH in a certain way based on the English alphabetical order. In the
+st.write("""PSKO is related to ILDH in a certain way based on the English alphabetical order. In the
 same way, RUMQ is related to KNFJ. To which of the given options is TWOS related,
-following the same logic?")
+following the same logic?""")
 st.code("""def letter_to_number(letter):
     return ord(letter) - ord('A') + 1
 
@@ -106,4 +106,5 @@ result_word = apply_shift(word_to_transform, shifts)
 
 print("TWOS is related to:", result_word)
 """)
+
 
