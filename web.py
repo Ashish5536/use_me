@@ -64,4 +64,46 @@ product_result = numpy.prod(sum_result)
 # Step 5: अंतिम परिणाम प्रिंट करें
 print(product_result)
 """)
+st.write("PSKO is related to ILDH in a certain way based on the English alphabetical order. In the
+same way, RUMQ is related to KNFJ. To which of the given options is TWOS related,
+following the same logic?")
+st.code("""def letter_to_number(letter):
+    return ord(letter) - ord('A') + 1
+
+def number_to_letter(number):
+    return chr(number + ord('A') - 1)
+
+def transform(source, target):
+    shifts = []
+    for s, t in zip(source, target):
+        shift = letter_to_number(t) - letter_to_number(s)
+        shifts.append(shift)
+    return shifts
+
+def apply_shift(word, shifts):
+    result = ''
+    for i in range(len(word)):
+        orig_pos = letter_to_number(word[i])
+        new_pos = orig_pos + shifts[i]
+        # Wrap around if needed (1 to 26)
+        if new_pos < 1:
+            new_pos += 26
+        elif new_pos > 26:
+            new_pos -= 26
+        result += number_to_letter(new_pos)
+    return result
+
+# Given examples
+example_1_from = "PSKO"
+example_1_to = "ILDH"
+
+# Step 1: Find the shifts used
+shifts = transform(example_1_from, example_1_to)
+
+# Step 2: Apply the same shifts to "TWOS"
+word_to_transform = "TWOS"
+result_word = apply_shift(word_to_transform, shifts)
+
+print("TWOS is related to:", result_word)
+""")
 
